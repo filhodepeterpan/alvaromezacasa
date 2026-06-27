@@ -28,7 +28,7 @@
     #banner-conteudo{
         max-width: 90%;
     }
-    #banner h1{
+    #banner h1, #sobre-mim h1{
         font-size: 2.5rem;
     }
 
@@ -43,6 +43,17 @@
 
     .track span{
         margin: 0 1rem;
+    }
+
+    #sobre-mim{
+        flex-direction: column-reverse;
+        width: 80%;
+        text-align: center;
+        gap: 2rem;
+    }
+
+    #foto-alvaro, #sobre-mim article{
+        width: 100%;
     }
 
     footer{

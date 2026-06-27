@@ -26,6 +26,10 @@ a{
     transition: 0.1s all;
 }
 
+ul, li{
+    list-style-type: none;
+}
+
 #background{
   position: absolute;
   inset: 0;
@@ -217,6 +221,59 @@ section{
     color: var(--cor-secundaria);
     margin: 0 2rem;
     flex-shrink: 0;
+}
+
+#sobre-mim{
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+}
+
+#foto-alvaro{
+    width: 50%;
+}
+
+#foto-alvaro img{
+    width: 100%;
+    border-radius: var(--radius-padrao);
+}
+
+#sobre-mim article{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 50%;
+}
+
+#sobre-mim article h1{
+    font-size: 3rem;
+}
+
+#sobre-mim article p{
+    color: var(--cor-light);
+}
+
+.palavra-destacada{
+    color: var(--cor-primaria);
+}
+
+#sobre-mim article ul{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+#sobre-mim article ul li{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+#sobre-mim article ul li span{
+    padding: 0.5rem;
+    border-radius: 50%;
+    color: var(--cor-secundaria);
+    background-color: color-mix(in srgb, var(--cor-secundaria) 10%, white);
 }
 
 footer{
