@@ -60,6 +60,7 @@ main{
     border: thin solid color-mix(in srgb, var(--cor-light) 20%, transparent);
     border-radius: var(--radius-padrao);
     padding: 1rem 2rem;
+    z-index: 1;
 }
 
 button{
@@ -238,15 +239,16 @@ footer{
     letter-spacing: 0.1rem;
     font-weight: bold;
     color: var(--cor-light);
-    font-size: 0.8rem;
     text-transform: uppercase;
+    font-size: 0.8rem;
 }
 
 #footer-info #contato{
     display: flex;
-    gap: 1rem;
+    gap: 1.5rem;
     font-weight: bold;
     color: var(--cor-light);
+    font-size: 0.9rem;
 }
 
 ::-webkit-scrollbar {
