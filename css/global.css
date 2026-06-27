@@ -94,6 +94,7 @@ button{
 
 #agendar-consulta-botao{
     box-shadow: 0 8px 20px color-mix(in srgb, var(--cor-primaria) 35%, transparent);
+    transition: 0.3s all;
 }
 
 #agendar-consulta-botao:hover{
