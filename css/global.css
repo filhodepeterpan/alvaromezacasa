@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    transition: 0.1s all;
 }
 
 html{
@@ -24,6 +23,7 @@ body{
 a{
     text-decoration: none;
     color: inherit;
+    transition: 0.1s all;
 }
 
 #background{
@@ -171,24 +171,49 @@ section{
     color: var(--cor-primaria);
 }
 
-#carrossel{
+#faixa{
     width: 100vw;
-    display: flex;
-    justify-content: space-between;
+    overflow: hidden;
     padding: 3rem 0;
     background-color: color-mix(in srgb, var(--cor-light) 5%, white);
+
+    -webkit-mask-image: linear-gradient(
+        to right,
+        transparent,
+        black 10%,
+        black 90%,
+        transparent
+    );
+
+    mask-image: linear-gradient(
+        to right,
+        transparent,
+        black 10%,
+        black 90%,
+        transparent
+    );
 }
 
-#carrossel p{
-    width: 100%;
+.track{
+    display: flex;
+    align-items: center;
+    width: max-content;
+    animation: deslizar 45s linear infinite;
+}
+
+.track p{
     color: var(--cor-light);
     font-size: 1.3rem;
     font-weight: bold;
     text-align: center;
+    white-space: nowrap;
+    margin: 0 2rem;
 }
 
-#carrossel span{
+.track span{
     color: var(--cor-secundaria);
+    margin: 0 2rem;
+    flex-shrink: 0;
 }
 
 footer{
@@ -245,4 +270,13 @@ footer{
 *::selection {
     background-color: var(--cor-primaria);
     color: white;
+}
+
+@keyframes deslizar{
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-50%);
+    }
 }
