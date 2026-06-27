@@ -1,3 +1,53 @@
 @media (max-width: 1200px) {
-    
+    header, main, footer{
+        width: 100vw;
+        padding: 0;
+    }
+
+    #header-menu{
+        width: 100vw;
+        position: relative;
+        border-radius: 0;
+        flex-direction: column;
+        gap: 1.5rem;
+        background: color-mix(white 80%, transparent)
+    }
+
+    #links li{
+        font-size: 0.6rem;
+    }
+
+    #agendar-consulta-botao{
+        font-size: 0.7rem;
+    }
+
+    #banner-conteudo{
+        max-width: 90%;
+    }
+    #banner h1{
+        font-size: 2.5rem;
+    }
+
+    .track p{
+        font-size: 1.1rem;
+        margin: 0 1rem;
+    }
+
+    .track span{
+        margin: 0 1rem;
+    }
+
+    footer{
+        padding: 0;
+        margin: 0;
+    }
+
+    #footer-info{
+        flex-direction: column;
+        gap: 1.5rem;
+        text-align: center;
+        padding: 2rem 0;
+        margin: 0 auto;
+    }
+
 }

@@ -129,6 +129,7 @@ section{
 #tipos-atendimento{
     display: flex;
     justify-content: center;
+    align-items: center;
     margin-bottom: 3rem;
 }
 
@@ -141,6 +142,7 @@ section{
     padding: 0.5rem 1.5rem;
     font-weight: bold;
     background-color: color-mix(in srgb, var(--cor-secundaria) 10%, white);
+    text-align: center;
 }
 
 .conteudo{
