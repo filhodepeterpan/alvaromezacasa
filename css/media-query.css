@@ -4,6 +4,10 @@
         padding: 0;
     }
 
+    section{
+        height: auto;
+    }
+
     #header-menu{
         width: 100vw;
         position: relative;
@@ -26,6 +30,10 @@
     }
     #banner h1{
         font-size: 2.5rem;
+    }
+
+    #faixa {
+        margin: 5rem 0;
     }
 
     .track p{
