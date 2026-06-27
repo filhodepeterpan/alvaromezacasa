@@ -28,7 +28,7 @@
     #banner-conteudo{
         max-width: 90%;
     }
-    #banner h1, #sobre-mim h1{
+    #banner h1{
         font-size: 2.5rem;
     }
 
@@ -45,7 +45,7 @@
         margin: 0 1rem;
     }
 
-    #sobre-mim{
+    #sobre-mim-conteudo{
         flex-direction: column-reverse;
         width: 80%;
         text-align: center;
@@ -54,6 +54,10 @@
 
     #foto-alvaro, #sobre-mim article{
         width: 100%;
+    }
+
+    #agendar-wpp-conteudo h1{
+        font-size: 2.5rem;
     }
 
     footer{
