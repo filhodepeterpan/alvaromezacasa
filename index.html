@@ -50,7 +50,7 @@
                 <h1 id="frase-destaque-1">Nutrição inteligente.</h1>
                 <h1 id="frase-destaque-2">Resultados definitivos.</h1>
                 <p>Um método estruturado em bases científicas. Sem terrorismo nutricional, focado em entregar emagrecimento, hipertrofia e saúde de forma sustentável e realística.</p>
-                <button class="botao">Iniciar minha reestruturação &nbsp; <strong>→</strong></button>
+                <button class="botao" onclick="abrirModal()">Iniciar minha reestruturação &nbsp; <strong>→</strong></button>
             </div>
         </section>
 
@@ -103,7 +103,7 @@
                 <h1>Sua transformação com bases sólidas</h1>
                 <h1 class="palavra-destacada">começa aqui.</h1>
                 <p>Garanta sua vaga para uma avaliação e receba o mapa exato para a otimização da sua saúde e estética corporal.</p>
-                <button class="botao">Agendar pelo WhatsApp</button>
+                <button class="botao" onclick="abrirModal()">Agendar pelo WhatsApp</button>
             </div>
         </section> 
     </main>
@@ -114,10 +114,42 @@
             <p>2026 &copy; Álvaro Mezacasa - CRN-3 64264. Todos os direitos reservados</p>
             <div id="contato">
                 <a href="https://www.instagram.com/nutrimezacasa/" target="_blank">Instagram</a>
-                <a href="">WhatsApp</a>
+                <a onclick="abrirModal()">WhatsApp</a>
             </div>
         </div>
     </footer>
-<script src="js/script.js" type="module"></script>
+
+    <div id="modal-overlay">
+        <div id="modal-agendamento">
+            <div id="modal-cabecalho">
+                <h2>Triagem <span class="palavra-destacada">Digital</span></h2>
+                <button id="modal-fechar" aria-label="Fechar">&times;</button>
+            </div>
+            <p>Responda rapidamente para liberarmos uma vaga prioritária na agenda.</p>
+
+            <form id="form-agendamento">
+                <div class="campo">
+                    <label for="modal-nome">Nome completo</label>
+                    <input type="text" id="modal-nome" placeholder="Digite seu nome" required>
+                </div>
+
+                <div class="campo">
+                    <label for="modal-objetivo">Qual o seu objetivo principal?</label>
+                    <select id="modal-objetivo" required>
+                        <option value="" disabled selected>Selecione uma opção</option>
+                        <option value="emagrecimento">Emagrecimento</option>
+                        <option value="hipertrofia">Hipertrofia</option>
+                        <option value="saude">Saúde geral</option>
+                    </select>
+                </div>
+
+                <button type="submit" class="botao">Solicitar Agendamento</button>
+            </form>
+
+            <small>Você será direcionado(a) ao WhatsApp para confirmar seus dados.</small>
+        </div>
+    </div>
+
+<script src="js/script.js"></script>
 </body>
 </html>
