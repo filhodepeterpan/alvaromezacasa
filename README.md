@@ -9,3 +9,7 @@
 
 **SESSÃO 1**
 ![Sessão 1](assets/img/screenshots/sessao1.png)
+&nbsp;
+
+**TRIAGEM DIGITAL (redireciona para o WhatsApp)**
+![Triagem Digital](assets/img/screenshots/triagem_digital.png)
